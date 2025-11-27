@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import { FaTrophy, FaHome } from 'react-icons/fa';
-import { UserQuiz } from '../types';
+import { type UserQuiz } from '../types';
 import { clearCurrentUser } from '../utils/storage';
 
 interface ResultsScreenProps {
