@@ -1,13 +1,141 @@
 <!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>quiz-presentacion</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="Content-Language" content="es" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quiz: Presentación de Programación Lógica — Cláusulas de Horn y Resolución SLD</title>
+
+  <!-- Primary SEO -->
+  <meta name="description"
+    content="Material y quiz para la presentación sobre Cláusulas de Horn y Resolución SLD. Explicaciones, ejemplos, ejercicios y actividades para una exposición educativa en programación lógica y Prolog." />
+  <meta name="keywords"
+    content="programación lógica, cláusulas de Horn, resolución SLD, Prolog, inteligencia artificial, presentación, quiz, ejercicios, árboles SLD" />
+  <meta name="author" content="Luis Hernandez" />
+  <link rel="canonical" href="https://tu-dominio.com/quiz-presentacion-programacion-logica" />
+
+  <!-- Robots / Indexing -->
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+  <!-- Si no quieres indexar en dev: <meta name="robots" content="noindex,nofollow" /> -->
+
+  <!-- Open Graph (Facebook, LinkedIn, etc.) -->
+  <meta property="og:locale" content="es_ES" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Quiz: Presentación de Programación Lógica — Cláusulas de Horn y Resolución SLD" />
+  <meta property="og:description"
+    content="Material y quiz para la presentación sobre Cláusulas de Horn y Resolución SLD. Explicaciones, ejemplos, ejercicios y actividades para una exposición educativa en programación lógica y Prolog." />
+  <meta property="og:url" content="https://tu-dominio.com/quiz-presentacion-programacion-logica" />
+  <meta property="og:site_name" content="Programación Lógica - Recursos" />
+  <meta property="og:image"
+    content="https://thumbnails.genially.com/614f9a25ababa70018de6432/screenshots/cc3506fe-d8df-4ef9-b54d-973ed6f3d917.jpg" />
+  <meta property="og:image:alt" content="Diapositivas y ejercicios sobre cláusulas de Horn y resolución SLD" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Quiz: Presentación de Programación Lógica — Cláusulas de Horn y Resolución SLD" />
+  <meta name="twitter:description"
+    content="Material y quiz para la presentación sobre Cláusulas de Horn y Resolución SLD. Explicaciones, ejemplos, ejercicios y actividades para una exposición educativa en programación lógica y Prolog." />
+  <meta name="twitter:image"
+    content="https://thumbnails.genially.com/614f9a25ababa70018de6432/screenshots/cc3506fe-d8df-4ef9-b54d-973ed6f3d917.jpg" />
+  <meta name="twitter:site" content="@TuCuenta" />
+  <meta name="twitter:creator" content="@TuCuenta" />
+
+  <!-- Favicons (mejor incluir tus ficheros reales) -->
+  <link rel="icon" href="/logica.png" />
+  <link rel="icon" type="image/svg+xml" href="/logica.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+
+  <!-- Performance / Preconnect -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <!-- (si usas CDN para scripts o assets, añade preconnect a esos hosts) -->
+
+  <!-- Mobile / PWA -->
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="theme-color" content="#0EA5A4" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+
+  <!-- Security / Referrer policy -->
+  <meta name="referrer" content="no-referrer-when-downgrade" />
+
+  <!-- Structured Data (JSON-LD) -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "Quiz: Presentación de Programación Lógica — Cláusulas de Horn y Resolución SLD",
+      "description": "Material y quiz para la presentación sobre Cláusulas de Horn y Resolución SLD. Explicaciones, ejemplos y ejercicios para una exposición educativa en programación lógica y Prolog.",
+      "url": "https://tu-dominio.com/quiz-presentacion-programacion-logica",
+      "inLanguage": "es",
+      "author": {
+        "@type": "Person",
+        "name": "Luis Hernandez"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Recursos Programación Lógica",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://tu-dominio.com/images/logo.png"
+        }
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://thumbnails.genially.com/614f9a25ababa70018de6432/screenshots/cc3506fe-d8df-4ef9-b54d-973ed6f3d917.jpg",
+        "height": 630,
+        "width": 1200
+      }
+    }
+    </script>
+
+  <!-- Optional: Breadcrumb (útil para SERPs) -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Inicio",
+          "item": "https://tu-dominio.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Recursos",
+          "item": "https://tu-dominio.com/recursos"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Quiz Presentación Programación Lógica",
+          "item": "https://tu-dominio.com/quiz-presentacion-programacion-logica"
+        }
+      ]
+    }
+    </script>
+
+  <!-- Hreflang / Alternates (añade los enlaces reales de traducciones si existen) -->
+  <!--
+      Reemplaza href por las URLs correctas si tienes versiones en otros idiomas.
+      <link rel="alternate" hreflang="es" href="https://tu-dominio.com/quiz-presentacion-programacion-logica" />
+      <link rel="alternate" hreflang="en" href="https://tu-dominio.com/en/quiz-presentation-logic-programming" />
+    -->
+
+  <!-- Estilos críticos o CSS (si aplicable) -->
+  <!-- <link rel="stylesheet" href="/styles/critical.css" /> -->
+
+  <!-- Añade aquí scripts críticos si los necesitas en head (por ejemplo analytics que requieran head) -->
+</head>
+
+<body>
+  <div id="root"></div>
+  <script type="module" src="/src/main.tsx"></script>
+</body>
+
 </html>

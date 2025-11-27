@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
-import { FaUser, FaPlay } from 'react-icons/fa';
+import { FaPlay } from 'react-icons/fa';
+import logo from '../assets/logo.png';
 
 interface WelcomeScreenProps {
   onStart: (userName: string) => void;
@@ -31,7 +32,7 @@ export const WelcomeScreen = ({ onStart, hasExistingUser }: WelcomeScreenProps) 
         initial={{ scale: 0.9, opacity: 0 }}
         animate={{ scale: 1, opacity: 1 }}
         transition={{ delay: 0.2, duration: 0.5 }}
-        className="bg-gray-900 border-2 border-blue-500 rounded-2xl shadow-2xl shadow-blue-500/20 p-8 md:p-12 max-w-md w-full"
+        className="bg-gray-900 border-2 border-blue-500 rounded-2xl shadow-2xl shadow-blue-500/20 p-8 md:px-12 py-8 max-w-[500px] w-full"
       >
         <motion.div
           initial={{ scale: 0 }}
@@ -39,14 +40,16 @@ export const WelcomeScreen = ({ onStart, hasExistingUser }: WelcomeScreenProps) 
           transition={{ delay: 0.4, type: 'spring', stiffness: 200 }}
           className="flex justify-center mb-6"
         >
-          <div className="bg-linear-to-br from-blue-500 to-blue-600 rounded-full p-6 border-2 border-blue-400 shadow-lg shadow-blue-500/50">
-            <FaUser className="text-white text-4xl" />
+          <div className="">
+            <img src={logo} alt="Logo" className="size-45 object-cover bg-linear-to-br from-blue-500 to-blue-600 rounded-full  border-2 border-blue-400 shadow-lg shadow-blue-500/50" />
           </div>
         </motion.div>
 
-        <h1 className="text-3xl md:text-4xl font-bold text-center text-white mb-2">
+        <h1 className="text-3xl md:text-5xl font-bold text-center text-white mb-2">
           Bienvenido al Quiz
         </h1>
+
+        <span className='text-center text-gray-100 font-bold text-lg w-full mx-auto  flex items-center justify-center'>Clausulas de Horn y Resolución SLD</span>
 
         {hasExistingUser ? (
           <div className="space-y-4">
