@@ -25,8 +25,7 @@ export const Quiz = ({ userName, questions, onReset, onComplete, onUserCreated }
     // Si no hay usuario o el nombre no coincide, crear uno nuevo
     if (!quiz || quiz.userName !== userName) {
       // Mezclar las preguntas para que cada usuario tenga un orden diferente
-      const shuffledQuestions = [...questions].sort(() => Math.random() - 0.5);
-      quiz = createUserQuiz(userName, shuffledQuestions);
+      quiz = createUserQuiz(userName, questions);
       updateUserQuiz(quiz);
       isNewUser = true;
     } else {

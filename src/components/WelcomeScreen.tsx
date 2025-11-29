@@ -76,6 +76,9 @@ export const WelcomeScreen = ({ onStart, hasExistingUser }: WelcomeScreenProps) 
                 <input
                   id="userName"
                   type="text"
+                  autoComplete='on'
+                  autoCorrect='on'
+                  autoCapitalize='on'
                   value={userName}
                   onChange={(e) => setUserName(e.target.value)}
                   placeholder="Escribe tu nombre aquí"

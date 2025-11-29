@@ -45,12 +45,12 @@ export const QuestionCard = ({
             initial={{ scale: 0.9, opacity: 0 }}
             animate={{ scale: 1, opacity: 1 }}
             transition={{ delay: 0.2 }}
-            className="mb-6 rounded-lg overflow-hidden border-2 border-blue-500/50 size-50 mx-auto"
+            className="mb-6 rounded-lg overflow-hidden border-2 border-blue-500/50 w-fullmx-auto"
           >
             <img
               src={question.imageUrl}
               alt="Question"
-              className="size-50 object-cover"
+              className="w-full h-full object-cover"
             />
           </motion.div>
         )}
