@@ -60,7 +60,7 @@ export const questions: Question[] = [
   },
   {
     id: 6,
-    question: '¿La consulta ?- estudia(juan, matematicas). devuelve true?',
+    question: '¿Que devuelve la consulta ?- estudia(juan, matematicas)',
     type: 'image',
     answers: [
       { text: 'true', isCorrect: false },
@@ -105,7 +105,7 @@ export const questions: Question[] = [
   },
   {
     id: 10,
-    question: '¿La consulta ?- es_rojo(platano). devuelve true?',
+    question: '¿Que devuelve la consulta ?- es_rojo(platano).',
     type: 'image',
     answers: [
       { text: 'true', isCorrect: false },
